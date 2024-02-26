@@ -1,0 +1,124 @@
+.container {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+  max-width: 354px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.searchbar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px ;
+  background-color: transparent;
+  border: 1px solid var(--light-gold);
+  border-radius: 10px;
+}
+
+
+.searchbar::placeholder {
+  font-family: "Montserrat";
+  padding: 0 10px;
+}
+
+.searchbtn {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  border: none;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.ggmap {
+  width: 354px;
+  height: 263px;
+  padding: 20px 0;
+}
+
+.contact-info {
+  padding: 20px 0;
+  width: 292px;
+  justify-self: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 20px;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.social-contact {
+  justify-content: flex-start;
+}
+
+@media (min-width: 760px) {
+  .contact {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 1500px;
+    padding-top: 200px;
+    justify-content: center;
+  }
+
+  .ggmap {
+    width: 770px;
+    height: 462px;
+  }
+  
+  .map {
+    width: 770px;
+  }
+
+  .searchbar {
+    padding: 20px 0;
+    font-size: 24px;
+  }
+
+  .searchbtn {
+    scale: 1.5;
+    padding-right: 20px;
+  }
+
+  .contact-text {
+    width: 547px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+}

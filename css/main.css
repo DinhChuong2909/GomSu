@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "UTMDavida";
+  src: url('../font/UTM-Davida.ttf') format('truetype');
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--navy-blue);
+}
+
+:root {
+  --white: #fff;
+  --navy-blue: #001427;
+  --royal-blue: #1C2A3D;
+  --dark-emerald: #708D81;
+  --garnet: #6D0500;
+  --light-gold: #F4D58D;
+  --glass-gradient: linear-gradient(108deg, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.1) 85%);
+  --smooth: all .3s ease-in;
+}
+
+svg {
+  color: var(--light-gold);
+}
+
+svg:hover {
+  color: var(--dark-emerald);
+}
+
+svg:active {
+  color: var(--navy-blue);
+  padding: 5px;
+  background-color: var(--light-gold);
+  border-radius: 25px;
+}
+
+.wrapper {
+  max-width: 1500px;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  /* padding: 0 10px; */
+}
+
+img.background {
+  background-image: url('../assets/imgs/home-background.png');
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+}
+
+.logo {
+  width: 42px;
+  height: 49px;
+  object-fit: cover;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.menu {
+  z-index: 6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.navbar-items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: max-content;
+  border: 1px solid var(--light-gold);
+  border-radius: 32px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  margin-top: 20px;
+  background-color: #001427;
+  transition: var(--smooth);
+  transform: translateX(-100%); 
+  justify-content: center;
+  opacity: 0; 
+  z-index: 5;
+}
+
+.navbar-items.navbar-open {
+  transform: translateX(0);
+  opacity: 1;
+  transition: var(--smooth);
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.icon + .icon {
+  margin-left: 30px;
+}
+
+.begin-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand-name {
+  font-family: "UTMDavida";
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--light-gold);
+  align-items: center;
+  text-align: center;
+}
+
+.introduce-text {
+  width: 80%;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--white);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.start-button {
+  width: max-content;
+  padding: 0.5rem 2rem;
+  border-radius: 35px;
+  background-color: transparent;
+  font-size: 24px;
+  border: 3px solid var(--light-gold);
+  color: var(--light-gold);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.start-button:hover {
+  color: var(--dark-emerald);
+  transition: 0.2s;
+}
+
+.start-button:active {
+  background-color: var(--light-gold);
+  color: var(--navy-blue);
+}
+
+@media (min-width: 760px) {
+  .navbar-items {
+    width: 100%;
+    position: initial;
+    transform: translateX(0);
+    opacity: 1;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    gap: calc(100% / 8);
+    align-items: center;
+    border: none;
+  }
+
+  .menu {
+    display: none;
+  }  
+
+  .navbar-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 102px;
+    height: 121.3px;
+  }
+
+  .introduce-text {
+    font-size: 14px;
+  }
+
+  .brand-name {
+    font-size: 140px;
+    font-weight: 400;
+  }
+
+  .start-button {
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,136 @@
+.container {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.about-us {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.about-image {
+  margin: 40px 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.about-introduce {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.team-members {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.team-title {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.member-info {
+  position: relative;
+}
+
+.name {
+  font-family: "UTMDavida";
+  font-size: 24px;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 20px 10px;
+}
+
+.member-img {
+  width: 230px;
+  height: 304px;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .about-image {
+    width: 45%;
+  }
+
+  .about-title {
+    font-size: 55px;
+    text-align: left;
+  }
+  
+  .about-introduce {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 50px;
+  }
+
+  .team-title {
+    font-size: 60px;
+    padding: 40px;
+  }
+
+  .team-members {
+    flex-direction: row;
+  }
+
+  #member-1 {
+    order: 2;
+  }
+
+  #member-2 {
+    order: 1;
+  }
+
+  #member-3 {
+    order: 3;
+  }
+
+  .member-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .member-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .text {
+    padding-left: 0;
+  }
+}

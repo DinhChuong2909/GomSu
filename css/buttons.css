@@ -1,0 +1,96 @@
+.small-button {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 24px;
+  border: 3px solid var(--light-gold);
+  color: var(--light-gold);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.small-button:hover {
+  color: var(--dark-emerald);
+  transition: 0.2s;
+}
+
+.small-button:active {
+  background-color: var(--light-gold);
+  color: var(--navy-blue);
+}
+
+.large-button {
+  width: max-content;
+  padding: 0.5rem 4rem;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 24px;
+  border: 3px solid var(--light-gold);
+  color: var(--light-gold);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.large-button:hover {
+  color: var(--dark-emerald);
+  transition: var(--smooth);
+}
+
+.large-button:active {
+  background-color: var(--light-gold);
+  color: var(--navy-blue);
+}
+
+.menu-button {
+  width: max-content;
+  padding: 0.5rem 2rem;
+  margin: 20px;
+  color: var(--light-gold);
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-button:hover {
+  color: var(--dark-emerald);
+}
+
+.menu-button:active {
+  color: var(--light-gold);
+  border-bottom: 2px solid var(--light-gold);
+}
+
+.dropbtn {
+  background-color: transparent;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  border: 3px solid var(--light-gold);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.dropbtn:active {
+  height: 100%;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: var(--dark-emerald);
+}
+
+@media (min-width: 760px) {
+  .small-button {
+    font-size: 32px;
+  }
+
+  .menu-button {
+    padding: 5px 10px;
+  }
+}

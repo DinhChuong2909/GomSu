@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Homepage</title>
+
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="./css/main.css" />
+      <link rel="stylesheet" href="./css/buttons.css" />
+      <link rel="stylesheet" href="./css/inputForm.css" />
+      <link rel="stylesheet" href="./css/home.css" />
+    </head>
+  </head>
+  <body>
+    <header-component></header-component>
+    <!-- Homepage slider -->
+    <section class="container">
+      <div class="slider-wrapper">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="page-title">Trang chủ</div>
+        <!-- Next / Prev arrow -->
+        <div class="next-arrow">
+          <span class="left" onclick="prev()">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-left">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.3587 28.5L39.6794 45.8206L36.3206 49.1794L15.6412 28.5L36.3206 7.82062L39.6794 11.1794L22.3587 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="right" onclick="next()">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-right">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M34.6413 28.5L17.3207 11.1794L20.6794 7.82062L41.3588 28.5L20.6794 49.1794L17.3207 45.8206L34.6413 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+        <!-- slider -->
+        <div class="slider">
+          <div class="slider-content" id="slide-1">
+            <img
+              class="slider-img"
+              src="./assets/imgs/item1.png"
+              alt="Gốm sứ bát tràng"
+            />
+            <div class="text">
+              <div class="title">GỐM SỨ BÁT TRÀNG</div>
+              <p class="introduce">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book
+              </p>
+              <div class="action-button">
+                <button class="small-button" style="font-size: 14px">
+                  XEM THÊM
+                </button>
+                <button class="small-button" style="font-size: 14px">
+                  XEM SẢN PHẨM
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="slider-content" id="slide-2">
+            <img
+              class="slider-img"
+              src="./assets/imgs/item1.png"
+              alt="Gốm sứ bát tràng"
+            />
+            <div class="text">
+              <div class="title">GỐM SỨ ád TRÀNG</div>
+              <p class="introduce">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book
+              </p>
+              <div class="action-button">
+                <button class="small-button" style="font-size: 14px">
+                  XEM THÊM
+                </button>
+                <button class="small-button" style="font-size: 14px">
+                  XEM SẢN PHẨM
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="slider-content" id="slide-3">
+            <img
+              class="slider-img"
+              src="./assets/imgs/item1.png"
+              alt="Gốm sứ bát tràng"
+            />
+            <div class="text">
+              <div class="title">GỐM SỨ 5 TRÀNG</div>
+              <p class="introduce">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book
+              </p>
+              <div class="action-button">
+                <button class="small-button" style="font-size: 14px">
+                  XEM THÊM
+                </button>
+                <button class="small-button" style="font-size: 14px">
+                  XEM SẢN PHẨM
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination dot -->
+        <div class="pagination">
+          <a class="dot active" id="dot-1" onclick="gotoCurrent()"></a>
+          <a class="dot" id="dot-2" onclick="gotoCurrent()"></a>
+          <a class="dot" id="dot-3" onclick="gotoCurrent()"></a>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="info-wrapper">
+        <div class="content-wrapper reverse">
+          <img
+            class="origin-image"
+            src="./assets/imgs/origin-1.png"
+            alt="Nguồn gốc"
+          />
+          <div class="text" id="origin">
+            <div class="title info-title reverse">Nguồn gốc</div>
+            <p class="introduce origin-introduce">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.Lorem Ipsum is
+              simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book
+            </p>
+            <div class="action-button reverse">
+              <button class="small-button origin-button" onclick="more()">
+                XEM THÊM
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hide">
+          <div class="content-wrapper">
+            <img
+              class="origin-image"
+              src="./assets/imgs/origin-2.png"
+              alt="Nguồn gốc"
+            />
+            <div class="text">
+              <p
+                class="introduce origin-introduce "
+              >
+                Phường Bát Tràng (社鉢場) là tên gọi cũ của làng gốm sứ Bát
+                Tràng thuộc quận Gia Lâm, Hà Nội trong khoảng trước năm 1945.
+                Trước đây hơn 700 năm, người dân thôn Bát Tràng thiên di từ làng
+                tình nhân Bát (xã người tình Xuyên và trang Bạch Bát thuộc tổng
+                Bạch Bát, quận yên Mô, phủ Trường yên ổn , trấn Thanh Hóa ngoại,
+                nay là 2 thôn của phố yên ổnThành, huyện im Mô, tỉnh Ninh
+                Bình[1]), theo vua Lý Công Uẩn rời đô trong khoảng Hoa Lư ra
+                Thăng Long, đến vùng đất bồi trên bờ sông Hồng, lập phố khiến
+                cho nghề gốm (gạch xây dựng); lúc đầu thôn Bát Tràng được gọi là
+                Bạch Thổ phố , thị trấn Bát Tràng (tức làng Bát Tràng hiện tại)
+                thuộc tổng Đông Dư, huyện Gia Lâm, phủ Thuận An, thức giấc Bắc
+                Ninh) sinh sống cốt bằng nghề làm gốm sứ và buôn bán và làm
+                quan. . Năm 1948, xãBát Tràng nhập sở hữu phố Giang Cao và
+                phường Kim Lan lập thành thị trấn quang quẻ Minh. từ năm 1964,
+                xã Bát Tràng được có mặt trên thị trường gồm hai thôn Bát Tràng
+                và Giang Cao như hiện. Gốm sứ bát tràng luôn mang một vị trí
+                trong những người dùng trong nước cũng như ngoaifi nước bởi sở
+                hữu nhiều ưu chấm .
+              </p>
+            </div>
+          </div>
+          <div class="content-wrapper reverse">
+            <img
+              class="origin-image"
+              src="./assets/imgs/origin-3.png"
+              alt="Nguồn gốc"
+            />
+            <div class="text">
+              <p
+                class="introduce origin-introduce"
+              >
+                Hiện, sản phẩm gốm sứ Bát Tràng ngày một phong phú và phổ biến .
+                Ngoài các mặt hàng truyền thống, các lò gốm sứ Bát Tràng lâu đời
+                còn sinh sản nhiều sản phẩm gốm sứ Bát Tràng cao cấp mới đáp ứng
+                yêu cầu tiêu dùng trong Việt Nam như cácloại ấm chén, bát đĩa,
+                lọ hoa… kiểu mới, các nguyên liệu xây dựng , các mẫu sứ phương
+                pháp điện… và những sản phẩm xuất khẩu theo đơn đặt hàng của
+                nước ngoài. Sản phẩm Bát Tràng ra đời cả nước và được xuất khẩu
+                sang phổ thông nước châu Á, châu Âu. Bát Tràng suýt nhiều nhân
+                lực từ khắp nơi về sáng tác mẫu mã mới và cải tiến kỹ thuật chế
+                tác . một số nghệ nhân đã bước đầu thành công trong việc khôi
+                phục một số đồ gốm cổ sở hữu những ngoại hình và nước men đặc
+                sắc thời Lý, è cổ, Lê, Mạc…Sau năm 1986 làng gốm sứ Bát Tràng
+                mang sự chuyển biến totheo hướngkinh tế thị phần . những cộng
+                tác phố lần lượt giải thể hoặc chuyển thành công ty cổ phần,
+                những doanh nghiệp tođược có mặt trên thị trường nhưng vẫn còn
+                còn đó phổ biến tổ phân phối và đa dạng là các công ty sản xuất
+                nhỏ theo hộ gia đình. phố Bát Tràng nay đã trở nên một trung tâm
+                gốm lớn.
+              </p>
+            </div>
+          </div>
+          <div class="hide-button">
+            <svg
+              width="20"
+              height="33"
+              viewBox="0 0 20 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.0001 8.71962L3.92265 15.4745L2.74414 14.1646L10.0001 6.09985L17.256 14.1646L16.0775 15.4745L10.0001 8.71962Z"
+                fill="currentcolor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.0001 19.2497L3.92265 26.0047L2.74414 24.6948L10.0001 16.6299L17.256 24.6948L16.0775 26.0047L10.0001 19.2497Z"
+                fill="currentcolor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="info-wrapper characteristic">
+        <div class="content-wrapper characteristic">
+          <img
+            class="origin-image characteristic"
+            src="./assets/imgs/characteristic.png"
+            alt="Đặc điểm"
+          />
+          <div class="text">
+            <div class="title info-title">ĐẶC ĐIỂM</div>
+            <p
+              class="introduce origin-introduce"
+              style="width: 100%; text-align: left"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.Lorem Ipsum is
+              simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book.
+            </p>
+            <div class="action-button">
+              <button class="small-button origin-button">XEM THÊM</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="slider-wrapper">
+        <br> <br>
+        <div class="title">Hình ảnh</div>
+        <!-- Next / Prev arrow -->
+        <div class="next-arrow">
+          <span class="left">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-left">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.3587 28.5L39.6794 45.8206L36.3206 49.1794L15.6412 28.5L36.3206 7.82062L39.6794 11.1794L22.3587 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="right">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-right">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M34.6413 28.5L17.3207 11.1794L20.6794 7.82062L41.3588 28.5L20.6794 49.1794L17.3207 45.8206L34.6413 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+        <!-- slider -->
+        <div class="slider">
+          <div class="slider-content prod" id="prod-1">
+            <img
+              class="slider-img prod"
+              src="./assets/imgs/prod-1.png"
+              alt="Gốm sứ bát tràng"
+            />
+          </div>
+          <div class="slider-content prod" id="prod-2">
+            <img
+              class="slider-img prod"
+              src="./assets/imgs/prod-2.png"
+              alt="Gốm sứ bát tràng"
+            />
+          </div>
+          <div class="slider-content prod" id="prod-3">
+            <img
+              class="slider-img prod"
+              src="./assets/imgs/prod-3.png"
+              alt="Gốm sứ bát tràng"
+            />
+          </div>
+          <div class="slider-content prod" id="prod-4">
+            <img
+              class="slider-img prod"
+              src="./assets/imgs/prod-4.png"
+              alt="Gốm sứ bát tràng"
+            />
+          </div>
+        </div>
+        <!-- Pagination dot -->
+        <div class="pagination">
+          <a class="dot active" id="dot-1"></a>
+          <a class="dot" id="dot-2"></a>
+          <a class="dot" id="dot-3"></a>
+        </div>
+      </div>
+    </section>
+    <footer-component></footer-component>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/homepage.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>
