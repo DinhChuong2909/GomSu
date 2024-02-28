@@ -164,11 +164,21 @@
     padding: 0;
   }
 
-  .left, .right {
-    width: 129px;
-    height: 150px;
+  .left {
+    transform: translate(0, 0);
   }
 
+  .right {
+    transform: translate(0, 0); 
+  }
+
+  .action-button {
+    padding: 20px 0px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1500px) {
   .left {
     transform: translate(-100%, 50%);
   }
@@ -177,9 +187,9 @@
     transform: translate(100%, 50%);
   }
 
-  .action-button {
-    padding: 20px 0px;
-    justify-content: flex-start;
+  .left, .right {
+    width: 129px;
+    height: 150px;
   }
 }
 

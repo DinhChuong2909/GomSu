@@ -27,7 +27,7 @@ body {
   --dark-emerald: #708D81;
   --garnet: #6D0500;
   --light-gold: #F4D58D;
-  --glass-gradient: linear-gradient(108deg, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.1) 85%);
+  --glass-gradient: linear-gradient(102.7deg, rgba(255, 255, 255, 0.2) 49.72%, rgba(255, 255, 255, 0) 129.39%);
   --smooth: all .3s ease-in;
 }
 
@@ -103,7 +103,7 @@ header {
   border-bottom-left-radius: 0;
   border-left: none;
   margin-top: 20px;
-  background-color: #001427;
+  background: var(--navy-blue);
   transition: var(--smooth);
   transform: translateX(-100%); 
   justify-content: center;
@@ -200,7 +200,7 @@ header {
     background-color: transparent;
     display: flex;
     justify-content: flex-end;
-    gap: calc(100% / 8);
+    gap: calc(100% / 6);
     align-items: center;
     border: none;
   }
@@ -211,7 +211,7 @@ header {
 
   .navbar-wrapper {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .logo {

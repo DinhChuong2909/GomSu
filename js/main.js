@@ -1,4 +1,4 @@
-// Menu
+// Navbar menu
 const menu = document.querySelector(".navbar-items");
 const menuButton = document.querySelector(".menu");
 

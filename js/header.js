@@ -3,7 +3,7 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
 <link rel="stylesheet" href="./css/main.css" />
 <link rel="stylesheet" href="./css/buttons.css" />
-<script src="./main.js" defer></script>
+
 <header>
 <div class="wrapper">
   <div class="wrapper">
@@ -83,6 +83,7 @@ headerTemplate.innerHTML = `
   </div>
 </div>
 </header>
+<script src="./main.js"></script>
 `;
 
 class Header extends HTMLElement {

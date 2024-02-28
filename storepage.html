@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Store</title>
+
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="./css/main.css" />
+      <link rel="stylesheet" href="./css/home.css" />
+      <link rel="stylesheet" href="./css/buttons.css" />
+      <link rel="stylesheet" href="./css/inputForm.css" />
+      <link rel="stylesheet" href="./css/store.css" />
+    </head>
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <section class="container">
+      <div class="store">
+        <div class="page-title">CỬA HÀNG</div>
+        
+        <!-- Menu --> 
+        <div class="store-button">
+          <svg id="plus" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.75 16.2502H35.5V19.7502H19.75V35.5002H16.25V19.7502H0.5V16.2502H16.25V0.500244H19.75V16.2502Z" fill="currentcolor"/>
+          </svg>              
+        </div>
+
+        <!-- Category -->
+        <div class="filter-menu">
+          <div class="menu-wrapper">
+              <div class="btn">
+                <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M30 2.75V0.25H0V2.75H30ZM30 7.74999V10.25H0V7.74999H30ZM30 15.25V17.75H0V15.25H30Z" fill="white"/>
+                  </svg>            
+              </div> 
+              <div class="categories-list"> Danh sách sản phẩm </div>
+            <div class="product-categories">
+              <ul class="categories">
+                <li><a href="#" class="category">Bộ trà / Cafe</a></li>
+                <li><a href="#" class="category">Tô và dĩa</a></li>
+                <li><a href="#" class="category">Bình hoa</a></li>
+                <li><a href="#" class="category">Đồ trang trí</a></li>
+                <li><a href="#" class="category">Niêu đất</a></li>
+              </ul>
+            </div>
+            <div class="price-sort">
+              <div class="price-input"><input type="checkbox"> 100.000 - 300.000 </div>
+              <div class="price-input"><input type="checkbox"> 300.000 - 500.000 </div>
+              <div class="price-input"><input type="checkbox"> 500.000 - 1.000.000 </div>
+              <div class="price-input"><input type="checkbox"> 1.000.000 - 2.000.000 </div>
+              <div class="price-input"><input type="checkbox"> 2.000.000 trở lên </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cửa hàng -->
+        <div class="slider-wrapper">
+          <br />
+          <br />
+          <div class="slider-title">SẢN PHẨM MỚI</div>
+          <!-- Next / Prev arrow -->
+          <div class="next-arrow">
+            <span class="left">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 57 57"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="24 / arrows / chevron-left">
+                  <path
+                    id="icon"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.3587 28.5L39.6794 45.8206L36.3206 49.1794L15.6412 28.5L36.3206 7.82062L39.6794 11.1794L22.3587 28.5Z"
+                    fill="currentcolor"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span class="right">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 57 57"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="24 / arrows / chevron-right">
+                  <path
+                    id="icon"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M34.6413 28.5L17.3207 11.1794L20.6794 7.82062L41.3588 28.5L20.6794 49.1794L17.3207 45.8206L34.6413 28.5Z"
+                    fill="currentcolor"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+          <!-- slider -->
+          <div class="slider">
+            <div class="slider-content prod" id="prod-1">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-1.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+              </div>
+              <div class="prod-price" >
+                2.230.000 VNĐ
+              </div>
+            </div>
+            <div class="slider-content prod" id="prod-2">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-2.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ TRÀ 0.7L - JASMINE <br>QUẢ ĐẦU MÙA
+              </div>
+              <div class="prod-price" >
+                858.000 VNĐ
+              </div>
+            </div>
+            <div class="slider-content prod" id="prod-3">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-3.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ CÀ PHÊ 0.8L - SAGO <br> THIÊN TUẾ XANH KHẮC NỔI
+              </div>
+              <div class="prod-price" >
+                3.624.500 VNĐ
+              </div>
+            </div>
+            <div class="slider-content prod" id="prod-4">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-4.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ CÀ PHÊ PHIN - CAMELLIA <br> MÀU CÀ PHÊ
+              </div>
+              <div class="prod-price" >
+                935.000 VNĐ
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a class="dot active" id="dot-1"></a>
+            <a class="dot" id="dot-2"></a>
+            <a class="dot" id="dot-3"></a>
+            <a class="dot" id="dot-4"></a>
+          </div>
+        </div>
+        <div class="slider-wrapper">
+          <br />
+          <br />
+          <div class="slider-title">SẢN PHẨM BÁN CHẠY</div>
+          <!-- Next / Prev arrow -->
+          <div class="next-arrow">
+            <span class="left">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 57 57"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="24 / arrows / chevron-left">
+                  <path
+                    id="icon"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.3587 28.5L39.6794 45.8206L36.3206 49.1794L15.6412 28.5L36.3206 7.82062L39.6794 11.1794L22.3587 28.5Z"
+                    fill="currentcolor"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span class="right">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 57 57"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="24 / arrows / chevron-right">
+                  <path
+                    id="icon"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M34.6413 28.5L17.3207 11.1794L20.6794 7.82062L41.3588 28.5L20.6794 49.1794L17.3207 45.8206L34.6413 28.5Z"
+                    fill="currentcolor"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+          <!-- slider -->
+          <div class="slider">
+            <div class="slider-content prod" id="prod-1">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-1.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+              </div>
+              <div class="prod-price" >
+                2.230.000 VNĐ
+              </div>
+            </div>
+            <div class="slider-content prod" id="prod-2">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-2.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+              </div>
+              <div class="prod-price" >
+                2.230.000 VNĐ
+              </div>
+            </div>
+            <div class="slider-content prod" id="prod-3">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-3.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+              </div>
+              <div class="prod-price" >
+                2.230.000 VNĐ
+              </div>
+            </div>
+            <div class="slider-content prod" id="prod-4">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-4.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="prod-title">
+                BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+              </div>
+              <div class="prod-price" >
+                2.230.000 VNĐ
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a class="dot active" id="dot-1"></a>
+            <a class="dot" id="dot-2"></a>
+            <a class="dot" id="dot-3"></a>
+            <a class="dot" id="dot-4"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/store.js"></script>
+  </body>
+</html>

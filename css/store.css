@@ -1,0 +1,268 @@
+.container {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.store {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.slider-wrapper:last-child {
+  padding-top: 0;
+}
+
+.slider-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--light-gold);
+  align-items: center;
+  text-align: center;
+}
+
+.slider-wrapper {
+  padding-top: 70px;
+}
+
+.prod-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.prod-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--light-gold);
+  text-align: center;
+}
+
+.pagination {
+  visibility: hidden;
+}
+
+@media (min-width: 760px) {
+
+  .store {
+    padding-top: 50px;
+  }
+
+  .slider-title {
+    font-size: 48px;
+    padding: 70px 0;
+  }
+
+  .slider-title:last-child {
+    font-size: 48px;
+  }
+
+  .prod-title {
+    font-size: 18px;
+  }
+
+  .prod-price {
+    font-size: 24px;
+  }
+
+  .slider-content {
+    flex-direction: column;
+  }
+
+  .pagination {
+    display: flex;
+  }
+}
+
+/* Category List */
+.filter-menu {
+  position: fixed;
+  width: 70%;
+  height: fit-content;
+  margin-top: 20px;
+  padding: 7px 0;
+  background: var(--glass-gradient);
+  backdrop-filter: blur(10px);
+  border: 0.75px solid var(--white);
+  border-radius: 0px 15px 15px 0px;
+  transform: translateX(-100%);
+  transition: var(--smooth);
+  opacity: 0;
+  z-index: 4;
+}
+
+.filter-menu.filter-menu-open {
+  transform: translateX(0);
+  opacity: 1;
+  transition: var(--smooth);
+}
+
+.menu-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.product-categories {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.categories-list {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  padding: 10px 0;
+}
+
+.categories {
+  width: fit-content;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  padding: 0 20px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.price-sort {
+  width: fit-content;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  padding: 10px 0;
+}
+
+.store-button {
+  position: fixed;
+  margin-top: 20px;
+  padding: 2% 3% 2% 5%;
+  border: 0.75px solid var(--white);
+  border-radius: 0px 15px 15px 0px;
+  z-index: 5;
+  background: var(--glass-gradient);
+  backdrop-filter: blur(10px);
+  transition: var(--smooth);
+}
+
+.store-button.store-button-open {
+  border: none;
+  backdrop-filter: none;
+  background: none;
+  transition: var(--smooth);
+}
+
+#plus.store-button-open {
+  transition: var(--smooth);
+  rotate: 45deg;
+}
+
+.btn {
+  visibility: hidden;
+  z-index: 5;
+}
+
+@media (min-width: 760px) and (max-width: 900px){
+  .filter-menu {
+    visibility: hidden;
+  }
+
+  .store-button {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 900px) {
+  .filter-menu {
+    display: fixed;
+    transform: translateX(-85%);
+    width: 30%;
+    opacity: 1;
+    top: 22%;
+    height: 50vh; 
+  }
+  
+  .store-button {
+    visibility: hidden;
+  }
+
+  .btn {
+    visibility: visible;
+    display: fixed;
+    margin: auto 0;
+    position: absolute;
+    top: 4.5%;
+    right: 5%;
+    z-index: 5;
+    
+  }
+  
+  .btn.open {
+    top: 4.5%;
+    right: 87%;
+  }
+
+  .product-categories {
+    padding: 16px 0;
+  }
+  
+  .categories-list,
+  .categories,
+  .categories a,
+  .price-sort {
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width: 1500px) {
+  .filter-menu {
+    display: fixed;
+    transform: translateX(calc(-100% - 7vw));
+    width: 22%;
+    height: 50vh;
+    top: 22%;
+  }
+
+  .filter-menu.filter-menu-open {
+    transform: translateX(-50%);
+  }
+
+  .store-button {
+    visibility: hidden;
+  }
+
+  .btn.open {
+    right: 95%;
+  }
+
+  .btn {
+    visibility: visible;
+    display: fixed;
+  }
+
+  .product-categories {
+    padding: 20px 0;
+  }
+  
+  .categories-list,
+  .categories,
+  .categories a,
+  .price-sort {
+    font-size: 24px;
+  }
+}
+

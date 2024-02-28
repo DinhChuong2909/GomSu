@@ -1,4 +1,3 @@
-
 const slider = document.querySelector('.slider');
 const sliderItems = slider.children;
 const sliderItemsCount = sliderItems.length;
@@ -38,7 +37,7 @@ const more = () => {
   document.querySelector('#origin').scrollIntoView();
 }
 
-document.querySelector('.hide-btn').addEventListener('click', () => {
+document.querySelector('.hide-button').addEventListener('click', () => {
   const hiddenDiv = document.querySelector('.show');
   hiddenDiv.classList.add('hide');
   hiddenDiv.classList.remove('show');
