@@ -1,0 +1,236 @@
+
+.container {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.authen-wrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  color: white;
+}
+
+.authen-img {
+  width: 0;
+  height: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  visibility: hidden;
+}
+
+.authen-title {
+  font-size: 36px;
+  padding: 15px 20px;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+input {
+  width: 100%;
+  font-size: 14px;
+}
+
+.another {
+  position: relative;
+  padding-top: 20px;
+}
+
+.or {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.method {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.vl {
+  border-left: 3px solid var(--light-gold);
+  height: 40%;
+}
+
+/* Register */
+
+.policy {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.small-button {
+  font-family: "UTMDavida";
+  font-size: 18px;
+}
+
+.submit {
+  padding-top: 20px;
+}
+
+.emailbtn {
+  position: absolute;
+  right: 0;
+  top: -3%;
+  padding: 10px;
+  border: none;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.eyebtn {
+  position: absolute;
+  right: 0;
+  top: 32%;
+  padding: 10px;
+  border: none;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.eyebtn #eyeopen {
+  display: none;
+}
+
+.eyebtn.show #eyeclose {
+  display: none;
+}
+
+.eyebtn.show #eyeopen {
+  display: block;
+}
+
+.eyebtn-two {
+  position: absolute;
+  right: 0;
+  top: 67%;
+  padding: 10px;
+  border: none;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.eyebtn-two #eyeopen {
+  display: none;
+}
+
+.eyebtn-two.show #eyeclose {
+  display: none;
+}
+
+.eyebtn-two.show #eyeopen {
+  display: block;
+}
+
+
+
+@media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 15vh;
+    height: 100vh;
+  }
+
+  .authen-img {
+    width: 65%;
+    height: auto;
+    border-radius: 200px;
+    object-fit: cover;
+    position: relative;
+    visibility: visible;
+    z-index: 0;
+    margin: auto;
+  }
+
+  .authen-wrapper {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .authen-title {
+    font-size: 48px;
+    width: 100%;
+    font-size: 72px;
+    font-weight: 400;
+  }
+}
+
+/* Login */
+
+.login-eyebtn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding: 10px;
+  border: none;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.login-eyebtn #eyeopen {
+  display: none;
+}
+
+.login-eyebtn.show #eyeclose {
+  display: none;
+}
+
+.login-eyebtn.show #eyeopen {
+  display: block;
+}
+
+.persist {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.group {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+
+@media (min-width: 900px) {
+  .group,
+  .persist {
+    font-size: 18px;
+  }
+
+}

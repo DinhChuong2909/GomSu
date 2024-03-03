@@ -37,5 +37,7 @@ input[type='checkbox'] {
   accent-color: var(--light-gold);
   color: transparent;
   border-radius: 5px;
-  margin: auto;
+  width: 12px;
+  margin: 0;
+  margin-right: 5px;
 }

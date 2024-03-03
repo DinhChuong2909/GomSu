@@ -176,6 +176,36 @@
     padding: 20px 0px;
     justify-content: flex-start;
   }
+
+  .image_wrapper {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute; 
+    background: #5E5E5EB2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gold);
+    -webkit-mask-image: url(../assets/icons/search.svg);
+    mask-image: url(../assets/icons/search.svg);    
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+  
+  .overlay_1 {
+    inset: 0;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+  }
+  
+  .image_wrapper:hover .overlay_1 {
+    transform: scale(1);
+  }
+
 }
 
 @media (min-width: 1500px) {
@@ -254,9 +284,9 @@
 }
 
 .hide-button {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
+  margin: auto;
+  width: 20px;
+  height: 32.76px;
 }
 
 .characteristic {
@@ -275,17 +305,15 @@
   }
 
   .content-wrapper {
+    max-width: 100vw;
     padding: 20px 0;
-    flex-direction: row;
     justify-content: space-between;
-    margin-right: auto;
-    margin-left: 0;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .content-wrapper.reverse {
-    flex-direction: row-reverse;
-    margin-right: 0;
-    margin-left: auto;
+  .content-wrapper.reverse img {
+    order: 1;
   }
 
   .content-wrapper.characteristic {
@@ -293,18 +321,27 @@
   }
 
   .text {
-    padding: 0 50px;
+    width: 80%;
+    align-items: center;
+    justify-self: center;
   }
 
   .origin-image {
-    width: 60%;
-    height: 60%;
+    padding: 40px 0;
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .origin-image.reverse {
+    margin-left: auto;
   }
 
   .origin-image.characteristic {
+    width: 90%;
     height: 100%;
-    width: auto;
+    object-fit: cover;
     margin: 0;
+    padding: 0;
   }
 
   .origin-introduce {
@@ -326,6 +363,12 @@
     justify-content: flex-end;
   }
 
+  .hide-button {
+    position: relative;
+    width: 54px;
+    height: 76.49px;
+  }
+
   .origin-button {
     font-size: 24px;
   }
@@ -340,6 +383,7 @@
     height: auto;
     padding: 0;
   }
+
 }
 
 /* Footer */
