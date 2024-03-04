@@ -144,7 +144,20 @@ input {
   right: 22%;
 }
 
-.emailbtn {
+.cardbtn button {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  top: 38%;
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.namebtn {
   position: absolute;
   right: 0;
   top: 57%;
@@ -156,37 +169,20 @@ input {
   z-index: 1;
 }
 
-.emailbtn button {
+.namebtn button {
   background-color: transparent;
   border: none;
   width: 22px;
   height: 22px;
 }
 
-.phonebtn button {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 0;
-  top: 77%;
-  margin: 10px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.icons svg {
-  width: 22px;
-  height: 22px;
-}
 
 .buttons {
   width: 100%;
   padding-top: 18px;
   display: flex;
   justify-content: flex-end;
-  column-gap: 42px;
+  column-gap: 20px;
 }
 
 .small-button {
@@ -214,6 +210,7 @@ select {
 
 @media (min-width: 600px) {
   .container {
+    /* width: calc(100% - 100px); */
     padding: 145px 0 100px 0;
   }
 
@@ -239,7 +236,6 @@ select {
 
 @media (min-width: 1200px) {
   .container {
-    /* width: calc(100% - 100px); */
     padding: 220px 0 100px 0;
   }
 
@@ -341,11 +337,11 @@ select {
     right: 22%;
   }
 
-  .emailbtn {
-    top: 55%;
+  .namebtn {
+    top: 56%;
   }
 
-  .emailbtn button {
+  .namebtn button {
     width: 40px;
     height: 40px;
   }
@@ -355,14 +351,15 @@ select {
     height: 40px;
   }
 
-  .phonebtn button {
+  .cardbtn button {
     width: 40px;
     height: 40px;
-    top: 73.5%;
+    top: 37.5%;
   }
 
   .buttons {
     padding: 35px 0;
+    column-gap: 40px;
   }
 
   .small-button {

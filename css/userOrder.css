@@ -102,113 +102,98 @@
   transition: var(--smooth);
 }
 
-.info-box {
-  width: 100%;
-  padding-top: 12px;
+
+.orders-info {
+  padding-top: 70px;
 }
 
-.info-title {
-  font-size: 16px;
+.order-info {
+  padding-top: 45px;
+}
+
+
+.order-code {
+  font-size: 24px;
+}
+
+.order-id {
+  font-size: 24px;
   font-weight: 700;
-  padding: 5px 0;
 }
 
-input {
-  width: 100%;
-  font-size: 14px;
-  padding: 10px 10px;
-}
-
-.date {
-  width: 80%;
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 10px;
-}
-
-.date-arrow {
-  position: absolute;
+.order-process {
   width: fit-content;
-  top: 40.5%;
+  position: relative;
+  padding-top: 55px;
+  flex-direction: column;
+  text-align: center;
 }
 
-.date-arrow.stay {
-  right: 50%;
-}
-
-.date-arrow.left {
-  left: 18%;
-}
-
-.date-arrow.right {
-  right: 22%;
-}
-
-.emailbtn {
+.order-process::before {
+  display: inline-block;
+  content: "";
   position: absolute;
-  right: 0;
-  top: 57%;
-  padding: 10px;
-  border: none;
-  margin: auto;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 1;
+  top: 0;
+  left: 15px;
 }
 
-.emailbtn button {
-  background-color: transparent;
-  border: none;
-  width: 22px;
-  height: 22px;
-}
-
-.phonebtn button {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 0;
-  top: 77%;
-  margin: 10px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.icons svg {
-  width: 22px;
-  height: 22px;
-}
-
-.buttons {
-  width: 100%;
-  padding-top: 18px;
+.pos {
+  position: relative;
   display: flex;
   justify-content: flex-end;
-  column-gap: 42px;
 }
 
-.small-button {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--white);
+.process {
+  position: relative;
+  padding-left: 30px;
 }
 
-select {
-  width: 100%;
-  font-size: 14px;
-  padding: 10px 10px;
-  background-color: transparent;
-  color: var(--white);
-  border: 3px solid var(--light-gold);
-  border-radius: 15px;
+.process:not(:last-child) {
+  padding-bottom: 20px;
+}
 
-  /* appearance: none;
-  background-image: url("../assets/icons/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 0.7rem top 50%;
-  background-size: 0.65rem auto; */
+.process::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 10px;
+}
+
+.process.is-done:last-child::before {
+  content: none;
+}
+
+.process::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.process.is-done::before {
+  border-left: 2px solid var(--light-gold);
+}
+
+.process.is-done::after {
+  content: "";
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid var(--garnet);
+  background-color: var(--garnet);
+}
+
+.process-title {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 
@@ -235,11 +220,22 @@ select {
   .dropdown-title .md{
     font-size: 48px;
   }
+
+  .process:not(:last-child) {
+    padding-bottom: 75px;
+  }
+
+  .orders-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
 }
+
+
 
 @media (min-width: 1200px) {
   .container {
-    /* width: calc(100% - 100px); */
     padding: 220px 0 100px 0;
   }
 
@@ -252,7 +248,7 @@ select {
   }
 
   .info {
-    width: 90%;
+    width: 100%;
     height: fit-content;
     justify-content: flex-end;
     margin-right: 40px;
@@ -305,68 +301,24 @@ select {
     font-size: 55px;
   }
 
-  .info-box {
-    width: 100%;
-    padding-top: 20px;
+
+  .orders-info {
+    column-gap: 60px;
   }
 
-  .info-title {
+  .order-process {
+    padding-top: 67px;
+  }
+
+  .process-title {
     font-size: 24px;
-    padding: 10px 0;
   }
 
-  input {
+  .process-time {
     font-size: 18px;
-    padding: 15px 20px;
   }
 
-  select {
-    font-size: 18px;
-    padding: 15px 20px;
-  }
-
-  .date {
-    column-gap: 40px;
-  }
-
-  .date-arrow.stay {
-    right: 51%;
-  }
-  
-  .date-arrow.left {
-    left: 17%;
-  }
-  
-  .date-arrow.right {
-    right: 22%;
-  }
-
-  .emailbtn {
-    top: 55%;
-  }
-
-  .emailbtn button {
-    width: 40px;
-    height: 40px;
-  }
-
-  .icons svg {
-    width: 40px;
-    height: 40px;
-  }
-
-  .phonebtn button {
-    width: 40px;
-    height: 40px;
-    top: 73.5%;
-  }
-
-  .buttons {
-    padding: 35px 0;
-  }
-
-  .small-button {
-    font-size: 24px;
-    padding: 10px 30px;
+  .process:not(:last-child) {
+    padding-bottom: 35px;
   }
 }

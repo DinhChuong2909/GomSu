@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User infomation</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/userOrder.css" />
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <section class="container">
+      <div class="info-wrapper">
+        <div class="dropdown">
+          <div class="dropdown-title">
+            <p class="xl">QUẢN LÍ</p>
+            <p class="md">TÀI KHOẢN</p>
+            <div class="dropdown-arrow">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.0775 6.07739L17.256 7.2559L10.0001 14.5118L2.74414 7.2559L3.92265 6.07739L10.0001 12.1548L16.0775 6.07739Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="dropdown-items">
+            <a class="dropdown-item" href="./userInfopage.html"
+              >THÔNG TIN TÀI KHOẢN</a
+            >
+            <a class="dropdown-item" href="./userOrderpage.html"
+              >ĐƠN HÀNG CỦA TÔI</a
+            >
+            <a class="dropdown-item" href="./userBankpage.html"
+              >LIÊN KẾT NGÂN HÀNG</a
+            >
+          </div>
+        </div>
+        <div class="info">
+          <div class="form-title">THEO DÕI ĐƠN HÀNG</div>
+          <div class="orders-info">
+            <div class="order-info">
+              <div class="order-title">
+                <span class="order-code">Mã đơn: </span>
+                <span class="order-id"> ABCXYZ123456</span>
+              </div>
+              <div class="pos">
+                <div class="order-process">
+                  <div class="process is-done">
+                    <div class="process-title">Đang chuẩn bị hàng</div>
+                    <div class="process-time">12:00 Ngày 15/10/2021</div>
+                  </div>
+                  <div class="process is-done">
+                    <div class="process-title">Rời khỏi cửa hàng</div>
+                    <div class="process-time">15:00 Ngày 15/10/2021</div>
+                  </div>
+                  <div class="process is-done">
+                    <div class="process-title">Đang giao hàng</div>
+                    <div class="process-time">15:15 Ngày 15/10/2021</div>
+                  </div>
+                  <div class="process is-done">
+                    <div class="process-title">Giao hàng thành công</div>
+                    <div class="process-time current">15:40 Ngày 15/10/2021</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-info">
+              <div class="order-title">
+                <span class="order-code">Mã đơn: </span>
+                <span class="order-id"> ABCXYZ123456</span>
+              </div>
+              <div class="pos">
+                <div class="order-process">
+                  <div class="process is-done">
+                    <div class="process-title">Đang chuẩn bị hàng</div>
+                    <div class="process-time">12:00 Ngày 15/10/2021</div>
+                  </div>
+                  <div class="process is-done">
+                    <div class="process-title">Rời khỏi cửa hàng</div>
+                    <div class="process-time">15:00 Ngày 15/10/2021</div>
+                  </div>
+                  <div class="process is-done">
+                    <div class="process-title">Đang giao hàng</div>
+                    <div class="process-time">15:15 Ngày 15/10/2021</div>
+                  </div>
+                  <div class="process is-done">
+                    <div class="process-title">Giao hàng thành công</div>
+                    <div class="process-time current">15:40 Ngày 15/10/2021</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/user.js"></script>
+    <script src="./js/userInfo.js"></script>
+  </body>
+</html>
