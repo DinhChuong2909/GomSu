@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
   margin: 0 auto;
   color: white;
   padding-top: 110px;
@@ -208,10 +208,14 @@ select {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .container {
     /* width: calc(100% - 100px); */
     padding: 145px 0 100px 0;
+  }
+
+  .info-wrapper {
+    padding: 0 50px;
   }
 
   .dropdown {

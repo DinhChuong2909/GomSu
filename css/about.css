@@ -78,6 +78,8 @@
   .about-us {
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .about-image {
@@ -85,25 +87,26 @@
   }
 
   .about-title {
-    font-size: 55px;
+    font-size: 36px;
     text-align: left;
   }
   
   .about-introduce {
     width: 100%;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 400;
     text-align: left;
-    padding-right: 50px;
   }
 
   .team-title {
-    font-size: 60px;
+    font-size: 36px;
     padding: 40px;
   }
 
   .team-members {
     flex-direction: row;
+    padding: 0 50px;
+    column-gap: 20px;
   }
 
   #member-1 {
@@ -123,6 +126,16 @@
     height: 100%;
   }
 
+  .text {
+    padding-left: 0;
+  }
+
+  .name {
+    font-size: calc(20px + 0.2vw);
+  }
+}
+
+@media (min-width: 1200px) {
   .member-img img {
     position: relative;
     width: 100%;
@@ -130,7 +143,35 @@
     object-fit: contain;
   }
 
+  .about-introduce {
+    font-size: 24px;
+    font-weight: 400;
+    padding-right: 50px;
+  }
+
+  .about-title {
+    font-size: 55px;
+  }
+
+  .team-title {
+    font-size: 60px;
+    padding: 40px;
+  }
+
+  .team-members {
+    flex-direction: row;
+  }
+
+  .member-img {
+    width: 100%;
+    height: 100%;
+  }
+
   .text {
     padding-left: 0;
+  }
+
+  .name {
+    font-size: 28px;
   }
 }

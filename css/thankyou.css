@@ -29,11 +29,26 @@
   font-size: 12px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
+  .thankyoupage {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .small-button {
+    font-size: 18px;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
   .thankyoupage {
     width: 40%;
   }
-
+  
   .title {
     font-size: 96px;
   }

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "BỘ CÀ PHÊ 0.8L - SAGO MẪU ĐƠN VÀNG",
+    "img": "./assets/imgs/prod-1.png",
+    "code": "01134020803",
+    "price": "2.230.000",
+    "brand": "Minh Long I",
+    "texture": "Lạc Hồng",
+    "description": "Daisy trắng có thiết kế đơn giản, không cầu kỳ nhưng vẫn giữ được nét sang trọng và thanh lịch hiếm thấy ở những sản phẩm khác. Mỗi chiếc đĩa, tô, chén… đều được tạo hình cân đối, tròn đều, không một vết trầy xước. Sản phẩm được nung ở nhiệt độ cao theo công nghệ của Đức, không chì, camidium, an toàn tuyệt đối cho người sử dụng."
+  },
+  {
+    "id": 2,
+    "name": "BỘ TRÀ 0.7L - JASMINE QUẢ ĐẦU MÙA",
+    "img": "./assets/imgs/prod-2.png",
+    "code": "01134020804",
+    "price": "858.000",
+    "brand": "Minh Long I",
+    "texture": "Lạc Hồng",
+    "description": "Daisy trắng có thiết kế đơn giản, không cầu kỳ nhưng vẫn giữ được nét sang trọng và thanh lịch hiếm thấy ở những sản phẩm khác. Mỗi chiếc đĩa, tô, chén… đều được tạo hình cân đối, tròn đều, không một vết trầy xước. Sản phẩm được nung ở nhiệt độ cao theo công nghệ của Đức, không chì, camidium, an toàn tuyệt đối cho người sử dụng."
+  },
+  {
+    "id": 3,
+    "name": "BỘ CÀ PHÊ 0.8L - SAGO THIÊN TUẾ XANH KHẮC NỔI",
+    "img": "./assets/imgs/prod-1.png",
+    "code": "01134020805",
+    "price": "2.230.000",
+    "brand": "Minh Long I",
+    "texture": "Lạc Hồng",
+    "description": "Daisy trắng có thiết kế đơn giản, không cầu kỳ nhưng vẫn giữ được nét sang trọng và thanh lịch hiếm thấy ở những sản phẩm khác. Mỗi chiếc đĩa, tô, chén… đều được tạo hình cân đối, tròn đều, không một vết trầy xước. Sản phẩm được nung ở nhiệt độ cao theo công nghệ của Đức, không chì, camidium, an toàn tuyệt đối cho người sử dụng."
+  },
+  {
+    "id": 4,
+    "name": "Bộ trà cao 0.47 L - Anna Trắng Ngà",
+    "img": "./assets/imgs/prod-4.png",
+    "code": "01134020806",
+    "price": "1.500.000",
+    "brand": "Brand X",
+    "texture": "Texture Y",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "img": "./assets/imgs/prod-5.png",
+    "code": "01134020807",
+    "price": "2.000.000",
+    "brand": "Brand Y",
+    "texture": "Texture Z",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 6,
+    "name": "Product 6",
+    "img": "./assets/imgs/prod-6.png",
+    "code": "01134020808",
+    "price": "2.500.000",
+    "brand": "Brand Z",
+    "texture": "Texture X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 7,
+    "name": "Product 7",
+    "img": "./assets/imgs/prod-7.png",
+    "code": "01134020809",
+    "price": "3.000.000",
+    "brand": "Brand X",
+    "texture": "Texture Y",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 8,
+    "name": "Product 8",
+    "img": "./assets/imgs/prod-8.png",
+    "code": "01134020810",
+    "price": "3.500.000",
+    "brand": "Brand Y",
+    "texture": "Texture Z",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 9,
+    "name": "Product 9",
+    "img": "./assets/imgs/prod-9.png",
+    "code": "01134020811",
+    "price": "4.000.000",
+    "brand": "Brand Z",
+    "texture": "Texture X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 10,
+    "name": "Product 10",
+    "img": "./assets/imgs/prod-10.png",
+    "code": "01134020812",
+    "price": "4.500.000",
+    "brand": "Brand X",
+    "texture": "Texture Y",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 11,
+    "name": "Product 11",
+    "img": "./assets/imgs/prod-11.png",
+    "code": "01134020813",
+    "price": "5.000.000",
+    "brand": "Brand Y",
+    "texture": "Texture Z",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 12,
+    "name": "Product 12",
+    "img": "./assets/imgs/prod-12.png",
+    "code": "01134020814",
+    "price": "5.500.000",
+    "brand": "Brand Z",
+    "texture": "Texture X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 13,
+    "name": "Product 13",
+    "img": "./assets/imgs/prod-13.png",
+    "code": "01134020815",
+    "price": "6.000.000",
+    "brand": "Brand X",
+    "texture": "Texture Y",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 14,
+    "name": "Product 14",
+    "img": "./assets/imgs/prod-14.png",
+    "code": "01134020816",
+    "price": "6.500.000",
+    "brand": "Brand Y",
+    "texture": "Texture Z",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 15,
+    "name": "Product 15",
+    "img": "./assets/imgs/prod-15.png",
+    "code": "01134020817",
+    "price": "7.000.000",
+    "brand": "Brand Z",
+    "texture": "Texture X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 16,
+    "name": "Product 16",
+    "img": "./assets/imgs/prod-16.png",
+    "code": "01134020818",
+    "price": "7.500.000",
+    "brand": "Brand X",
+    "texture": "Texture Y",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 17,
+    "name": "Product 17",
+    "img": "./assets/imgs/prod-17.png",
+    "code": "01134020819",
+    "price": "8.000.000",
+    "brand": "Brand Y",
+    "texture": "Texture Z",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 18,
+    "name": "Product 18",
+    "img": "./assets/imgs/prod-18.png",
+    "code": "01134020820",
+    "price": "8.500.000",
+    "brand": "Brand Z",
+    "texture": "Texture X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 19,
+    "name": "Product 19",
+    "img": "./assets/imgs/prod-19.png",
+    "code": "01134020821",
+    "price": "9.000.000",
+    "brand": "Brand X",
+    "texture": "Texture Y",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  },
+  {
+    "id": 20,
+    "name": "Product 20",
+    "img": "./assets/imgs/prod-20.png",
+    "code": "01134020822",
+    "price": "9.500.000",
+    "brand": "Brand Y",
+    "texture": "Texture Z",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc. Sed euismod, nisl id aliquam ultrices, nunc nunc tincidunt mi, eu lacinia nunc nisl id nunc."
+  }
+]

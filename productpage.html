@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <section class="container">
+      <div class="product">
+        <div class="page-title">CỬA HÀNG</div>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a href="storepage.html">Cửa hàng</a>
+
+          <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3229 13.0001L8.33203 5.09945L9.8816 3.56738L19.4221 13.0001L9.8816 22.4328L8.33203 20.9007L16.3229 13.0001Z" fill="currentcolor"/>
+          </svg>
+
+          <a href="teaCoffeepage.html">Bộ trà / Cafe</a>
+
+          <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3229 13.0001L8.33203 5.09945L9.8816 3.56738L19.4221 13.0001L9.8816 22.4328L8.33203 20.9007L16.3229 13.0001Z" fill="currentcolor"/>
+          </svg>
+
+          <a href="#">Tên sản phẩm</a>
+
+          <!-- Product detail -->
+        </div>
+        <div class="product-detail">
+          <!-- Image collection -->
+          <div class="product-image">
+            <div class="main-image">
+              <img
+                id="main-image"
+                src="./assets/imgs/detail-1.png"
+                alt="Bộ trà 1.3 L - Hoàng Cung Lạc Hồng"
+              />
+            </div>
+            <div class="image-collection">
+              <img
+                src="./assets/imgs/detail-2.png"
+                alt="Bộ trà 1.3 L - Hoàng Cung Lạc Hồng"
+              />
+              <img
+                src="./assets/imgs/detail-3.png"
+                alt="Bộ trà 1.3 L - Hoàng Cung Lạc Hồng"
+              />
+              <img
+                src="./assets/imgs/detail-4.png"
+                alt="Bộ trà 1.3 L - Hoàng Cung Lạc Hồng"
+              />
+              <img
+                src="./assets/imgs/detail-5.png"
+                alt="Bộ trà 1.3 L - Hoàng Cung Lạc Hồng"
+              />
+            </div>
+          </div>
+          <!-- Product info -->
+          <div class="product-info">
+            <!-- Basic information -->
+            <div class="product-name" id="product-name">Bộ trà 1.3 L - Hoàng Cung Lạc Hồng</div>
+            <div class="product-text">
+              Mã sản phẩm:
+              <span class="bold" id="product-code">01134020803</span>
+            </div>
+            <div class="product-text">
+              Thương hiệu:
+              <span class="bold" id="product-brand">Minh Long I</span>
+            </div>
+            <div class="product-text">
+              Hoa văn:
+              <span class="bold" id="product-texture">Lạc Hồng</span>
+            </div>
+            <div class="product-price">
+              <div class="hl"></div>
+              <span id="product-price">3.730.000 VNĐ</span>
+              <div class="hl"></div>
+            </div>
+            <!-- Adding/Buying product actions -->
+            <div class="product-action">
+              <!-- Add -->
+              <div class="product-add">
+                <span class="product-quantity">Số lượng:</span>
+                <div class="counter">
+                  <button onclick="increase()">+</button>
+                  <input
+                    type="text"
+                    step="1"
+                    class="counting"
+                    id="quantity"
+                    value="0"
+                    maxlength="1"
+                  />
+                  <button onclick="decrease()">-</button>
+                </div>
+                <div class="buttons">
+                  <a>
+                    <svg
+                      width="43"
+                      height="41"
+                      viewBox="0 0 43 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.8783 6.83776C10.5601 6.8371 10.2534 6.87144 9.96188 6.93673C9.56231 6.09701 9.03452 5.34365 8.43422 4.77127C7.41535 3.79979 5.80843 3.41675 3.58398 3.41675V6.83341C4.94287 6.83341 5.72485 7.01982 5.90042 7.18722C6.57762 7.83292 7.16732 9.1449 7.16732 10.2501L7.18533 10.4917L8.94092 22.2093C6.00337 22.3546 3.72767 24.5297 3.58619 27.2488L3.58398 29.0417C3.75746 31.8501 6.02558 34.0105 8.85729 34.164L9.26403 34.1646C10.0013 36.1562 11.9928 37.5834 14.334 37.5834C16.6743 37.5834 18.6653 36.1573 19.4031 34.1667H23.5982C24.336 36.1573 26.327 37.5834 28.6673 37.5834C31.6359 37.5834 34.0423 35.2889 34.0423 32.4584C34.0423 29.628 31.6359 27.3334 28.6673 27.3334C26.327 27.3334 24.336 28.7595 23.5982 30.7501H19.4031C18.6653 28.7595 16.6743 27.3334 14.334 27.3334C11.9937 27.3334 10.0027 28.7595 9.26483 30.7501H8.95898C8.04525 30.6978 7.22561 29.9171 7.1641 28.9394L7.16732 27.3334C7.21563 26.4473 8.02967 25.6711 9.04777 25.623L12.5848 25.6238L12.6104 25.6251H30.6684L30.9328 25.5451C32.2913 25.1341 33.3788 24.1587 33.8937 22.8961L34.0824 22.5399L34.3105 22.1092L34.6957 21.3814C35.3301 20.1822 35.9646 18.981 36.5829 17.8074C38.0972 14.9327 39.0497 13.1058 39.2606 12.6572C40.3437 10.3534 38.1496 8.58012 35.9069 8.54236L10.8783 6.83776ZM30.0459 22.2084H12.7445C12.6295 22.1779 12.5418 22.085 12.5247 21.9693L10.769 10.2513L35.6429 11.9497C35.2077 12.796 34.4165 14.3076 33.3808 16.2738L33.3548 16.3231C32.7636 17.4453 32.13 18.6449 31.4964 19.8425C31.1405 20.515 31.1373 20.5209 30.8906 20.9868L30.8888 20.9902L30.8839 20.9995L30.6517 21.4377L30.5643 21.6314C30.4707 21.88 30.2849 22.0843 30.0459 22.2084ZM28.6673 34.1667C29.6568 34.1667 30.459 33.4019 30.459 32.4584C30.459 31.5149 29.6568 30.7501 28.6673 30.7501C27.6778 30.7501 26.8757 31.5149 26.8757 32.4584C26.8757 33.4019 27.6778 34.1667 28.6673 34.1667ZM16.1257 32.4584C16.1257 33.4019 15.3235 34.1667 14.334 34.1667C13.3445 34.1667 12.5423 33.4019 12.5423 32.4584C12.5423 31.5149 13.3445 30.7501 14.334 30.7501C15.3235 30.7501 16.1257 31.5149 16.1257 32.4584Z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </a>
+                  <a>
+                    <svg
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M36.6552 3.5L38.3944 34.8059C38.5016 36.7359 37.0239 38.3874 35.0939 38.4946C34.997 38.4991 34.9969 38.4991 34.9002 38.5H34.9001H34.8998H7.09961C5.16661 38.5 3.59961 36.933 3.59961 35C3.60051 34.9029 3.60051 34.9029 3.605 34.8059L5.34421 3.5H36.6552ZM8.6552 7.00003L7.09965 35H34.8998L33.3442 7.00003H8.6552ZM15.7496 10.5H12.2496V14.875C12.2496 19.0762 16.3153 22.75 20.9996 22.75C25.684 22.75 29.7496 19.0762 29.7496 14.875V10.5H26.2496V14.875C26.2496 17.0596 23.8256 19.25 20.9996 19.25C18.1736 19.25 15.7496 17.0596 15.7496 14.875V10.5Z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Rating -->
+              <div class="product-rating">
+                <span class="product-quantity">Đánh giá:</span>
+                <!-- 5 stars rating -->
+                <div class="rating">
+                  <input type="radio" name="rating" value="5" id="5" /><label
+                    for="5"
+                    >☆</label
+                  >
+                  <input type="radio" name="rating" value="4" id="4" /><label
+                    for="4"
+                    >☆</label
+                  >
+                  <input type="radio" name="rating" value="3" id="3" /><label
+                    for="3"
+                    >☆</label
+                  >
+                  <input type="radio" name="rating" value="2" id="2" /><label
+                    for="2"
+                    >☆</label
+                  >
+                  <input type="radio" name="rating" value="1" id="1" /><label
+                    for="1"
+                    >☆</label
+                  >
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="more-info">
+          <!-- Description -->
+          <div class="description">
+            <div class="product-name description-title">MÔ TẢ SẢN PHẨM</div>
+            <div class="description-text" id="product-description">
+              Daisy trắng có thiết kế đơn giản, không cầu kỳ nhưng vẫn giữ
+              được nét sang trọng và thanh lịch hiếm thấy ở những sản phẩm
+              khác. Mỗi chiếc đĩa, tô, chén… đều được tạo hình cân đối, tròn
+              đều, không một vết trầy xước. Sản phẩm được nung ở nhiệt độ cao
+              theo công nghệ của Đức, không chì, camidium, an toàn tuyệt đối
+              cho người sử dụng.
+            </div>
+          </div>
+          <!-- Specification -->
+          <div class="specification">
+            <div class="product-name specification-title">THÔNG TIN SẢN PHẨM</div>
+            <table>
+              <tr>
+                <td>Chiều dài</td>
+                <td>11,50 cm / 4,53 inch</td>
+              </tr>
+              <tr>
+                <td>Chiều rộng</td>
+                <td>11,50 cm / 4,53 inch</td>
+              </tr>
+              <tr>
+                <td>Chiều cao</td>
+                <td>11,50 cm / 4,53 inch</td>
+              </tr>
+              <tr>
+                <td>Trọng lượng</td>
+                <td>201 gram</td>
+              </tr>
+              <tr>
+                <td>Màu sắc</td>
+                <td>Trắng</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-wrapper">
+        <br />
+        <br />
+        <div class="slider-title">SẢN PHẨM CÙNG THƯƠNG HIỆU</div>
+        <!-- Next / Prev arrow -->
+        <div class="next-arrow">
+          <span class="left">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-left">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.3587 28.5L39.6794 45.8206L36.3206 49.1794L15.6412 28.5L36.3206 7.82062L39.6794 11.1794L22.3587 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="right">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-right">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M34.6413 28.5L17.3207 11.1794L20.6794 7.82062L41.3588 28.5L20.6794 49.1794L17.3207 45.8206L34.6413 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+        <!-- slider -->
+        <div class="slider">
+          <div class="slider-content prod" id="prod-1">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-1.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-2">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-2.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ TRÀ 0.7L - JASMINE <br>QUẢ ĐẦU MÙA
+            </div>
+            <div class="prod-price" >
+              858.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-3">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-3.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO <br> THIÊN TUẾ XANH KHẮC NỔI
+            </div>
+            <div class="prod-price" >
+              3.624.500 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-4">
+            <img
+              class="slider-img prod"
+              src="./assets/imgs/prod-4.png"
+              alt="Gốm sứ bát tràng"
+            />
+            <div class="prod-title">
+              BỘ CÀ PHÊ PHIN - CAMELLIA <br> MÀU CÀ PHÊ
+            </div>
+            <div class="prod-price" >
+              935.000 VNĐ
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="dot active" id="dot-1"></a>
+          <a class="dot" id="dot-2"></a>
+          <a class="dot" id="dot-3"></a>
+          <a class="dot" id="dot-4"></a>
+        </div>
+      </div>
+      <div class="slider-wrapper">
+        <br />
+        <br />
+        <div class="slider-title">SẢN PHẨM CÙNG DANH MỤC</div>
+        <!-- Next / Prev arrow -->
+        <div class="next-arrow">
+          <span class="left">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-left">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.3587 28.5L39.6794 45.8206L36.3206 49.1794L15.6412 28.5L36.3206 7.82062L39.6794 11.1794L22.3587 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="right">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-right">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M34.6413 28.5L17.3207 11.1794L20.6794 7.82062L41.3588 28.5L20.6794 49.1794L17.3207 45.8206L34.6413 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+        <!-- slider -->
+        <div class="slider">
+          <div class="slider-content prod" id="prod-1">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-1.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-2">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-2.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-3">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-3.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-4">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-4.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="dot active" id="dot-1"></a>
+          <a class="dot" id="dot-2"></a>
+          <a class="dot" id="dot-3"></a>
+          <a class="dot" id="dot-4"></a>
+        </div>
+      </div>
+      <div class="slider-wrapper">
+        <br />
+        <br />
+        <div class="slider-title">SẢN PHẨM ĐÃ XEM</div>
+        <!-- Next / Prev arrow -->
+        <div class="next-arrow">
+          <span class="left">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-left">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.3587 28.5L39.6794 45.8206L36.3206 49.1794L15.6412 28.5L36.3206 7.82062L39.6794 11.1794L22.3587 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="right">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="24 / arrows / chevron-right">
+                <path
+                  id="icon"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M34.6413 28.5L17.3207 11.1794L20.6794 7.82062L41.3588 28.5L20.6794 49.1794L17.3207 45.8206L34.6413 28.5Z"
+                  fill="currentcolor"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+        <!-- slider -->
+        <div class="slider">
+          <div class="slider-content prod" id="prod-1">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-1.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-2">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-2.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-3">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-3.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+          <div class="slider-content prod" id="prod-4">
+            <div class="image_wrapper">
+              <img
+                class="slider-img prod"
+                src="./assets/imgs/prod-4.png"
+                alt="Gốm sứ bát tràng"
+              />
+              <div class="overlay-background overlay_1"> </div>
+              <div class="overlay overlay_1"> </div>
+            </div>
+            <div class="prod-title">
+              BỘ CÀ PHÊ 0.8L - SAGO </br>MẪU ĐƠN VÀNG
+            </div>
+            <div class="prod-price" >
+              2.230.000 VNĐ
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="dot active" id="dot-1"></a>
+          <a class="dot" id="dot-2"></a>
+          <a class="dot" id="dot-3"></a>
+          <a class="dot" id="dot-4"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/product.js"></script>
+  </body>
+</html>

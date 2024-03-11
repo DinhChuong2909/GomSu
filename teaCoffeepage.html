@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/inputForm.css" />
+    <link rel="stylesheet" href="./css/store.css" />
+    <link rel="stylesheet" href="./css/productType.css" />
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <section class="container">
+      <div class="store">
+        <div class="page-title">CỬA HÀNG</div>
+        
+        <!-- Menu --> 
+        <div class="store-button">
+          <svg id="plus" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.75 16.2502H35.5V19.7502H19.75V35.5002H16.25V19.7502H0.5V16.2502H16.25V0.500244H19.75V16.2502Z" fill="currentcolor"/>
+          </svg>              
+        </div>
+
+        <!-- Category -->
+        <div class="filter-menu">
+          <div class="menu-wrapper">
+              <div class="btn">
+                <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M30 2.75V0.25H0V2.75H30ZM30 7.74999V10.25H0V7.74999H30ZM30 15.25V17.75H0V15.25H30Z" fill="white"/>
+                  </svg>            
+              </div> 
+              <div class="categories-list"> Danh sách sản phẩm </div>
+            <div class="product-categories">
+              <ul class="categories">
+                <li><a href="/teaCoffeepage.html" class="category">Bộ trà / Cafe</a></li>
+                <li><a href="#" class="category">Tô và dĩa</a></li>
+                <li><a href="#" class="category">Bình hoa</a></li>
+                <li><a href="#" class="category">Đồ trang trí</a></li>
+                <li><a href="#" class="category">Niêu đất</a></li>
+              </ul>
+            </div>
+            <div class="price-sort">
+              <div class="price-input"><input type="checkbox" id="price1"> 100.000 - 300.000 </div>
+              <div class="price-input"><input type="checkbox" id="price2"> 300.000 - 500.000 </div>
+              <div class="price-input"><input type="checkbox" id="price3"> 500.000 - 1.000.000 </div>
+              <div class="price-input"><input type="checkbox" id="price4"> 1.000.000 - 2.000.000 </div>
+              <div class="price-input"><input type="checkbox" id="price5"> 2.000.000 trở lên </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Productype -->
+        <div class="product-type">
+          <div class="product-type-title">Bộ trà / Cafe</div>
+          <div class="product-type-content">
+              <!-- Data from json -->
+          </div>
+
+          <div class="page-pagination">
+            <div style="display: flex; align-items: center; padding-right: 5px;" id="prev-page">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.21337 12.3711L16.3506 19.5084L14.9666 20.8924L6.44531 12.3711L14.9666 3.84985L16.3506 5.23388L9.21337 12.3711Z" fill="#F4D58D"/>
+              </svg>                
+            </div>
+            <ul></ul>
+            <div style="display: flex; align-items: center; padding-left: 5px;" id="next-page">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7857 12.3711L7.64844 5.23388L9.03247 3.84985L17.5537 12.3711L9.03247 20.8924L7.64844 19.5084L14.7857 12.3711Z" fill="#F4D58D"/>
+              </svg>                
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer-component></footer-component>
+    <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/store.js"></script>
+  </body>
+</html>

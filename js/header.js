@@ -58,7 +58,7 @@ headerTemplate.innerHTML = `
           </a>
 
           <!-- cart -->
-          <div class="icon">
+          <a class="icon" href="/cartpage.html">
             <svg
               width="57"
               height="57"
@@ -76,7 +76,7 @@ headerTemplate.innerHTML = `
                 />
               </g>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </nav>
