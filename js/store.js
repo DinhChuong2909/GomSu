@@ -29,7 +29,7 @@ let productList = null;
 let currentPage = 1;
 let limit = 12;
 
-fetch("/data/products.json")
+fetch("../data/products.json")
   .then((response) => response.json())
   .then((data) => {
     products = data;
@@ -43,7 +43,9 @@ function addDataToHTML() {
   products.forEach((data) => {
     // Create new element
     let newProduct = document.createElement("a");
-    newProduct.href = `./productpage.html?id=${data.id}`;
+    newProduct.addEventListener("click", () => {
+      window.location=`productpage.html?id=${data.id}`;
+    });
     newProduct.classList.add("slider-content", "prod");
     newProduct.innerHTML = `
       <div class="image_wrapper">
