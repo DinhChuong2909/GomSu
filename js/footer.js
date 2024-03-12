@@ -10,10 +10,10 @@ footerTemplate.innerHTML = `
           <img class="logo" src="./assets/imgs/logo.png"/>
           <div class="footer-navbar">
             <div class="page-navbar">
-              <a href="./homepage.html">Trang chủ</a>
-              <a href="./contactpage.html">Giới thiệu</a>
-              <a href="./aboutpage.html">Liên hệ</a>
-              <a href="./storepage.html">Cửa hàng</a>
+              <a href="homepage.html">Trang chủ</a>
+              <a href="contactpage.html">Giới thiệu</a>
+              <a href="aboutpage.html">Liên hệ</a>
+              <a href="storepage.html">Cửa hàng</a>
             </div>
             <div class="social-navbar">
               <a>

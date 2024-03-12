@@ -7,10 +7,9 @@ menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("open");
 });
 
-
 // Logo
 
 const logo = document.querySelector(".logo");
 logo.addEventListener("click", () => {
-  window.location.href = "homepage.html";
+  window.location = "homepage.html";
 });
