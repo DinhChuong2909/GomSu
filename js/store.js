@@ -29,7 +29,7 @@ let productList = null;
 let currentPage = 1;
 let limit = 12;
 
-fetch("../data/products.json")
+fetch("https://dinhchuong2909.github.io/GomSu/data/products.json")
   .then((response) => response.json())
   .then((data) => {
     products = data;
