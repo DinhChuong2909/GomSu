@@ -26,7 +26,7 @@ function showProduct() {
   const productID = new URLSearchParams(window.location.search).get('id');
   let product = products.filter(value => value.id == productID)[0];
   if (!product) {
-    window.location.href = '/storepage.html';
+    window.location.href = 'storepage.html';
   }
 
   // document.getElementById('main-image').src = product.img;

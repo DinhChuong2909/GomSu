@@ -11,9 +11,9 @@ footerTemplate.innerHTML = `
           <div class="footer-navbar">
             <div class="page-navbar">
               <a href="./homepage.html">Trang chủ</a>
-              <a href="./product.html">Giới thiệu</a>
-              <a href="./about.html">Liên hệ</a>
-              <a href="./contact.html">Cửa hàng</a>
+              <a href="./contactpage.html">Giới thiệu</a>
+              <a href="./aboutpage.html">Liên hệ</a>
+              <a href="./storepage.html">Cửa hàng</a>
             </div>
             <div class="social-navbar">
               <a>

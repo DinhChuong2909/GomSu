@@ -97,7 +97,6 @@ function listPage() {
     page.classList.add("page-number");
     pageList.appendChild(page);
   }
-
 }
 
 function changePage(page) {
@@ -109,14 +108,18 @@ function changePage(page) {
 
 function priceFilter() {
   const price1 = document.getElementById('price1');
-  console.log(price1);
   const price2 = document.getElementById('price2');
   const price3 = document.getElementById('price3');
   const price4 = document.getElementById('price4');
   const price5 = document.getElementById('price5');
-
-  if (price1.checked) {
-    let filter = products.filter(product => product.price <= "1.000.000");
-    console.log(filter);
-  }
+  let filter = [];
+  price1.addEventListener('click', () => {
+    products.forEach((item) => {
+      if (parseInt(item.price) <= 1000000) {
+        filter.push(item);
+      } else {
+        filter = [];
+      }
+    });
+  });
 }

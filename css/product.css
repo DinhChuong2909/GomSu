@@ -312,7 +312,6 @@ td {
 }
 
 @media (min-width: 1200px) {
-
   .more-info {
     width: 100%;
     margin: 0 auto;
@@ -341,7 +340,7 @@ td {
   }
   
   .product-info {
-    width: 80%;
+    width: 90%;
   }
 
   .product-name {

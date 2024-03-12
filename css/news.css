@@ -391,6 +391,11 @@
   .news-image {
     max-height: 100%;
   }
+
+  .page-pagination {
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -425,4 +430,13 @@
     font-size: 12px;
     font-weight: 400;
   }
+
+  .left {
+    transform: translate(-100%, 0);
+  }
+
+  .right {
+    transform: translate(100%, 0);
+  }
+
 }

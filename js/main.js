@@ -12,5 +12,5 @@ menuButton.addEventListener("click", () => {
 
 const logo = document.querySelector(".logo");
 logo.addEventListener("click", () => {
-  window.location.href = "/homepage.html";
+  window.location.href = "homepage.html";
 });

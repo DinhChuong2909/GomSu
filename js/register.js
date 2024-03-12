@@ -1,8 +1,8 @@
 const pwBtn = document.querySelector('.eyebtn');
 const confirmPwBtn = document.querySelector('.eyebtn-two');
 
-const open = () => {
-  const pw = document.getElementById('password');
+pwBtn.addEventListener('click', () => {
+  const pw = document.getElementById('first-password');
   if (pw.type === 'password') {
     pw.type = 'text';
   }
@@ -10,7 +10,7 @@ const open = () => {
     pw.type = 'password';
   }
   pwBtn.classList.toggle('show');
-};
+});
 
 confirmPwBtn.addEventListener('click', () => {
   const confirmPw = document.getElementById('confirm-password');
