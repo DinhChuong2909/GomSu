@@ -30,14 +30,14 @@ headerTemplate.innerHTML = `
       <!-- navbar -->
       <div class="navbar-items">
         <div class="navbar-wrapper">
-          <a class="menu-button" href="/homepage.html">Trang Chủ</a>
-          <a class="menu-button" href="/aboutpage.html">Giới Thiệu</a>
-          <a class="menu-button" href="/contactpage.html">Liên Hệ</a>
-          <a class="menu-button" href="/storepage.html">Cửa Hàng</a>
+          <a class="menu-button" onclick="window.location='homepage.html'">Trang Chủ</a>
+          <a class="menu-button" onclick="window.location='aboutpage.html'">Giới Thiệu</a>
+          <a class="menu-button" onclick="window.location='contactpage.html'">Liên Hệ</a>
+          <a class="menu-button" onclick="window.location='storepage.html'">Cửa Hàng</a>
         </div>
         <div class="user-toggle">
           <!-- User -->
-          <a class="icon" href="/loginpage.html">
+          <a class="icon" onclick="window.location='loginpage.html'">
             <svg
               width="57"
               height="57"
@@ -58,7 +58,7 @@ headerTemplate.innerHTML = `
           </a>
 
           <!-- cart -->
-          <a class="icon" href="/cartpage.html">
+          <a class="icon" onclick="window.location='cartpage.html'">
             <svg
               width="57"
               height="57"
