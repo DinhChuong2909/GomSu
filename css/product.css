@@ -418,4 +418,13 @@ td {
     justify-content: flex-start;
     font-size: 48px;
   }
+
+  table {
+    width: 45%;
+  }
+
+  td {
+    font-size: 24px;
+  }
+
 }

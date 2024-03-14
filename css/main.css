@@ -104,7 +104,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 60%;
+  width: 70%;
   height: max-content;
   border: 1px solid var(--light-gold);
   border-radius: 32px;
@@ -138,6 +138,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.user-toggle svg {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+  
 }
 
 .icon + .icon {
@@ -197,6 +204,10 @@ header {
 .start-button:active {
   background-color: var(--light-gold);
   color: var(--navy-blue);
+}
+
+.menu-button   {
+  margin: 10px;
 }
 
 @media (min-width: 760px) {

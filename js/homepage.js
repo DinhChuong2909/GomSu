@@ -43,3 +43,33 @@ document.querySelector('.hide-button').addEventListener('click', () => {
   hiddenDiv.classList.remove('show');
   document.querySelector('#origin').scrollIntoView();
 });
+
+
+// Bottom slider
+let prodCurrent = 1;
+const prodNext = () => {
+  prodCurrent = prodCurrent < sliderItemsCount ? prodCurrent + 1 : 1;
+  document.querySelector(`#prod-${prodCurrent}`).scrollIntoView();
+
+  const active = document.querySelector('.active');
+  active.classList.remove('active');
+  document.querySelector(`#proddot-${prodCurrent}`).classList.add('active');
+}
+
+const prodPrev = () => {
+  prodCurrent = prodCurrent > 1 ? prodCurrent - 1 : sliderItemsCount;
+  document.querySelector(`#prod-${prodCurrent}`).scrollIntoView();
+
+  const active = document.querySelector('.active');
+  active.classList.remove('active');
+  document.querySelector(`#proddot-${prodCurrent}`).classList.add('active');
+}
+
+const goCurrent = () => {
+  prodCurrent = parseInt(event.target.id.split('-')[1]);
+  const active = document.querySelector('.active');
+  active.classList.remove('active');
+
+  document.querySelector(`#prod-${prodCurrent}`).scrollIntoView();
+  event.target.classList.add('active');
+}
